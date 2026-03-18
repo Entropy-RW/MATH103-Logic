@@ -1,0 +1,901 @@
+<section xml:id="section-arguments">
+  <title>Logical Arguments</title>
+
+  <objectives xml:id="obj-arguments">
+    <title>Goals for This Section</title>
+    <ol>
+      <li>
+        Define logical arguments.
+      </li>
+      <li>
+        Learn to verify whether a logical argument is valid by using truth tables.
+      </li>
+    </ol>
+  </objectives>
+
+  <subsection>
+    <title>Logical Arguments</title>
+
+    <definition xml:id="def-logical-argument">
+      <statement>
+        <p>
+          A <term>logical argument</term> consists of a list of several premises
+          (statements that convey assumptions, rules, facts, and observations),
+          followed by a unique statement called the <term>conclusion</term> of the argument.
+        </p>
+      </statement>
+    </definition>
+
+    <example xml:id="example-argument-1">
+      <title>Example of a Logical Argument</title>
+      <p>
+        (Premise 1:) If you win the game, then I will celebrate.
+      </p>
+      <p>
+        (Premise 2:) You won the game.
+      </p>
+      <p>
+        (Conclusion:) Therefore, I am celebrating.
+      </p>
+    </example>
+
+    <example xml:id="example-argument-2">
+      <title>Another Example of a Logical Argument</title>
+      <p>
+        (Premise 1:) If you are a hero, then you wear a Rolex.
+      </p>
+      <p>
+        (Premise 2:) You wear a Rolex.
+      </p>
+      <p>
+        (Conclusion:) Therefore, you are a hero.
+      </p>
+    </example>
+
+    <definition xml:id="def-valid-argument">
+      <statement>
+        <p>
+          A <term>valid argument</term> is a logical argument in which,
+          if all the premises are true, then the conclusion must also be true.
+        </p>
+        <p>
+          In other words, a valid argument means that true premises guarantee a true conclusion.
+        </p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-invalid-argument">
+      <statement>
+        <p>
+          A <term>invalid argument</term> is a logical argument in which
+          all the premises can be true, but the conclusion can still be false.
+        </p>
+        <p>
+          An invalid argument is often called a <term>fallacy</term>.
+        </p>
+      </statement>
+    </definition>
+
+  </subsection>
+
+  <subsection xml:id="subsec-truth-table-method">
+  <title>Truth Table Method</title>
+
+  <p>
+    We can use <term>truth tables</term> to verify whether a logical argument is valid.
+    The method consists of the following steps:
+  </p>
+
+  <ol>
+    <li>
+      Identify the premises and the conclusion.
+    </li>
+    <li>
+      Represent each premise and the conclusion in symbolic form.
+    </li>
+    <li>
+     <li>
+    Construct a table by placing the premises and the conclusion next to each other,
+     with the last column representing the conclusion. Then extend the table to the
+    left by adding columns for all necessary simple statements and intermediate
+     expressions to complete the truth table.
+    </li>
+    </li>
+    <li>
+      Locate the rows where all premises are true, and then check the truth value of the conclusion in those rows.
+    </li>
+  </ol>
+
+  <p>
+    If, in every row where all premises are true, the conclusion is also true,
+    then the argument is valid.
+  </p>
+
+  <example xml:id="example-truth-table-1">
+    <title>Example 1: A Valid Argument</title>
+
+    <p>
+      If I go to a college, I will find a better job.
+      I go to a college.
+      Therefore, I will find a better job.
+    </p>
+
+    <p>
+      Let <m>p</m> = “I go to a college,” and
+      <m>q</m> = “I will find a better job.”
+    </p>
+
+    <p>Symbolic form:</p>
+    <p><m>p \to q</m></p>
+    <p><m>p</m></p>
+    <p><m>\therefore q</m></p>
+
+    <table>
+      <tabular>
+        <row header="yes">
+          <cell><m>p</m></cell>
+          <cell><m>q</m></cell>
+          <cell><m>p \to q</m></cell>
+          <cell><m>p</m></cell>
+          <cell><m>q</m></cell>
+        </row>
+        <row>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+        </row>
+        <row>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>F</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      The only row in which both premises <m>p \to q</m> and <m>p</m> are true
+      is the first row. In that row, the conclusion <m>q</m> is also true.
+      Therefore, the argument is valid.
+    </p>
+  </example>
+
+  <example xml:id="example-truth-table-2">
+    <title>Example 2: A Valid Argument</title>
+
+    <p>
+      If you love reading, you have a library membership.
+      You do not have a library membership.
+      Therefore, you do not love reading.
+    </p>
+
+    <p>
+      Let <m>p</m> = “You love reading,” and
+      <m>q</m> = “You have a library membership.”
+    </p>
+
+    <p>Symbolic form:</p>
+    <p><m>p \to q</m></p>
+    <p><m>\lnot q</m></p>
+    <p><m>\therefore \lnot p</m></p>
+
+    <table>
+      <tabular>
+        <row header="yes">
+          <cell><m>p</m></cell>
+          <cell><m>q</m></cell>
+          <cell><m>p \to q</m></cell>
+          <cell><m>\lnot q</m></cell>
+          <cell><m>\lnot p</m></cell>
+        </row>
+        <row>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>F</cell>
+        </row>
+        <row>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+        </row>
+        <row>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      The only row in which both premises <m>p \to q</m> and <m>\lnot q</m> are true
+      is the last row. In that row, the conclusion <m>\lnot p</m> is also true.
+      Therefore, the argument is valid.
+    </p>
+  </example>
+
+  <example xml:id="example-truth-table-3">
+    <title>Example 3: A Valid Argument</title>
+
+    <p>
+      I will learn MATH 103 or I will watch Breaking Bad.
+      I will not watch Breaking Bad.
+      Therefore, I will learn MATH 103.
+    </p>
+
+    <p>
+      Let <m>p</m> = “I will learn MATH 103,” and
+      <m>q</m> = “I will watch Breaking Bad.”
+    </p>
+
+    <p>Symbolic form:</p>
+    <p><m>p \lor q</m></p>
+    <p><m>\lnot q</m></p>
+    <p><m>\therefore p</m></p>
+
+    <table>
+      <tabular>
+        <row header="yes">
+          <cell><m>p</m></cell>
+          <cell><m>q</m></cell>
+          <cell><m>p \lor q</m></cell>
+          <cell><m>\lnot q</m></cell>
+          <cell><m>p</m></cell>
+        </row>
+        <row>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>F</cell>
+        </row>
+        <row>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      The only row in which both premises <m>p \lor q</m> and <m>\lnot q</m> are true
+      is the second row. In that row, the conclusion <m>p</m> is also true.
+      Therefore, the argument is valid.
+    </p>
+  </example>
+
+  <example xml:id="example-truth-table-invalid">
+    <title>Example 4: An Invalid Argument</title>
+
+    <p>
+      If you are a hero, then you wear a Rolex.
+      You wear a Rolex.
+      Therefore, you are a hero.
+    </p>
+
+    <p>
+      Let <m>p</m> = “You are a hero,” and
+      <m>q</m> = “You wear a Rolex.”
+    </p>
+
+    <p>Symbolic form:</p>
+    <p><m>p \to q</m></p>
+    <p><m>q</m></p>
+    <p><m>\therefore p</m></p>
+
+    <table>
+      <tabular>
+        <row header="yes">
+          <cell><m>p</m></cell>
+          <cell><m>q</m></cell>
+          <cell><m>p \to q</m></cell>
+          <cell><m>q</m></cell>
+          <cell><m>p</m></cell>
+        </row>
+        <row>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+        </row>
+        <row>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>F</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      In the third row, both premises <m>p \to q</m> and <m>q</m> are true,
+      but the conclusion <m>p</m> is false.
+      Therefore, this argument is invalid.
+    </p>
+  </example>
+<example xml:id="example-truth-table-invalid-2">
+  <title>Example 5: Another Invalid Argument</title>
+
+  <p>
+    If it is raining, then the ground is wet.
+    The ground is wet.
+    Therefore, it is raining.
+  </p>
+
+  <p>
+    Let <m>p</m> = “It is raining,” and
+    <m>q</m> = “The ground is wet.”
+  </p>
+
+  <p>Symbolic form:</p>
+  <p><m>p \to q</m></p>
+  <p><m>q</m></p>
+  <p><m>\therefore p</m></p>
+
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell><m>p</m></cell>
+        <cell><m>q</m></cell>
+        <cell><m>p \to q</m></cell>
+        <cell><m>q</m></cell>
+        <cell><m>p</m></cell>
+      </row>
+      <row>
+        <cell>T</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+      </row>
+      <row>
+        <cell>T</cell>
+        <cell>F</cell>
+        <cell>F</cell>
+        <cell>F</cell>
+        <cell>T</cell>
+      </row>
+      <row>
+        <cell>F</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+        <cell>F</cell>
+      </row>
+      <row>
+        <cell>F</cell>
+        <cell>F</cell>
+        <cell>T</cell>
+        <cell>F</cell>
+        <cell>F</cell>
+      </row>
+    </tabular>
+  </table>
+
+  <p>
+    Notice that in the first row, both premises are true and the conclusion is also true.
+    However, in the third row, both premises <m>p \to q</m> and <m>q</m> are true,
+    but the conclusion <m>p</m> is false.
+  </p>
+
+  <p>
+    Since there is a row where the premises are true and the conclusion is false
+    (T, T, F), the argument is invalid.
+  </p>
+
+</example>
+</subsection>
+<subsection xml:id="subsec-arguments-exercises">
+  <title>Exercises</title>
+
+  <p>
+    Determine whether each of the following arguments is valid or invalid.
+  </p>
+
+  <question xml:id="q-arguments-validity-a">
+    <statement>
+      <p>
+        If I were a chicken, then I would lay eggs. However, I am not a chicken, so I do not lay eggs.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let <m>p</m> = “I am a chicken,” and <m>q</m> = “I lay eggs.”
+      </p>
+      <p>Symbolic form:</p>
+      <p><m>p \to q</m></p>
+      <p><m>\lnot p</m></p>
+      <p><m>\therefore \lnot q</m></p>
+
+      <table>
+        <tabular>
+          <row header="yes">
+            <cell><m>p</m></cell>
+            <cell><m>q</m></cell>
+            <cell><m>p \to q</m></cell>
+            <cell><m>\lnot p</m></cell>
+            <cell><m>\lnot q</m></cell>
+          </row>
+          <row>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>F</cell>
+            <cell>F</cell>
+          </row>
+          <row>
+            <cell>T</cell>
+            <cell>F</cell>
+            <cell>F</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+          </row>
+          <row>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>F</cell>
+          </row>
+          <row>
+            <cell>F</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+          </row>
+        </tabular>
+      </table>
+
+      <p>
+        In the third row, both premises <m>p \to q</m> and <m>\lnot p</m> are true,
+        but the conclusion <m>\lnot q</m> is false.
+        Therefore, the argument is <term>invalid</term>.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-arguments-validity-b">
+    <statement>
+      <p>
+        If interest rates go down, then I will buy a house. If I buy a house, I will need a loan. Therefore, I will not need a loan if I do not buy a house.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let <m>p</m> = “Interest rates go down,”
+        <m>q</m> = “I will buy a house,” and
+        <m>r</m> = “I will need a loan.”
+      </p>
+      <p>Symbolic form:</p>
+      <p><m>p \to q</m></p>
+      <p><m>q \to r</m></p>
+      <p><m>\therefore \lnot q \to \lnot r</m></p>
+
+      <table>
+        <tabular>
+          <row header="yes">
+            <cell><m>p</m></cell>
+            <cell><m>q</m></cell>
+            <cell><m>r</m></cell>
+            <cell><m>p \to q</m></cell>
+            <cell><m>q \to r</m></cell>
+            <cell><m>\lnot q \to \lnot r</m></cell>
+          </row>
+          <row>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>F</cell>
+          </row>
+          <row>
+            <cell>T</cell>
+            <cell>F</cell>
+            <cell>F</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+          </row>
+          <row>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+          </row>
+          <row>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+          </row>
+          <row>
+            <cell>F</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>F</cell>
+          </row>
+          <row>
+            <cell>F</cell>
+            <cell>F</cell>
+            <cell>F</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+            <cell>T</cell>
+          </row>
+        </tabular>
+      </table>
+
+      <p>
+        In the seventh row, both premises <m>p \to q</m> and <m>q \to r</m> are true,
+        but the conclusion <m>\lnot q \to \lnot r</m> is false.
+        Therefore, the argument is <term>invalid</term>.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-arguments-validity-c">
+    <statement>
+      <p>
+        If I am honest, you are lying; either you are lying or you have your facts wrong.
+        You cannot have done your research, if you have your facts wrong.
+        You did your research. Therefore, I am honest.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let <m>h</m> = “I am honest,”
+        <m>l</m> = “You are lying,”
+        <m>f</m> = “You have your facts wrong,” and
+        <m>r</m> = “You did your research.”
+      </p>
+      <p>Symbolic form:</p>
+      <p><m>h \to l</m></p>
+      <p><m>l \lor f</m></p>
+      <p><m>f \to \lnot r</m></p>
+      <p><m>r</m></p>
+      <p><m>\therefore h</m></p>
+
+      <table>
+        <tabular>
+          <row header="yes">
+            <cell><m>h</m></cell>
+            <cell><m>l</m></cell>
+            <cell><m>f</m></cell>
+            <cell><m>r</m></cell>
+            <cell><m>h \to l</m></cell>
+            <cell><m>l \lor f</m></cell>
+            <cell><m>f \to \lnot r</m></cell>
+            <cell><m>r</m></cell>
+            <cell><m>h</m></cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell>
+          </row>
+        </tabular>
+      </table>
+
+      <p>
+        In the eleventh row, all the premises <m>h \to l</m>, <m>l \lor f</m>,
+        <m>f \to \lnot r</m>, and <m>r</m> are true, but the conclusion <m>h</m> is false.
+        Therefore, the argument is <term>invalid</term>.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-arguments-validity-d">
+    <statement>
+      <p>
+        If you like apples, you will like this pie. If you like this pie, then you will like the bakery.
+        Therefore, if you do not like the bakery, you do not like apples.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let <m>a</m> = “You like apples,”
+        <m>p</m> = “You like this pie,” and
+        <m>b</m> = “You like the bakery.”
+      </p>
+      <p>Symbolic form:</p>
+      <p><m>a \to p</m></p>
+      <p><m>p \to b</m></p>
+      <p><m>\therefore \lnot b \to \lnot a</m></p>
+
+      <table>
+        <tabular>
+          <row header="yes">
+            <cell><m>a</m></cell>
+            <cell><m>p</m></cell>
+            <cell><m>b</m></cell>
+            <cell><m>a \to p</m></cell>
+            <cell><m>p \to b</m></cell>
+            <cell><m>\lnot b \to \lnot a</m></cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+          </row>
+          <row>
+            <cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+          </row>
+        </tabular>
+      </table>
+
+      <p>
+        In every row where both premises <m>a \to p</m> and <m>p \to b</m> are true,
+        the conclusion <m>\lnot b \to \lnot a</m> is also true.
+        Therefore, the argument is <term>valid</term>.
+      </p>
+    </solution>
+  </question>
+<question xml:id="q-arguments-validity-e">
+  <statement>
+    <p>
+      Given the premises:
+    </p>
+    <p>
+      P1: If today is Saturday, then we do not have class today.
+    </p>
+    <p>
+      P2: If we do not have class today, then I will go shopping or I will go to the picnic.
+    </p>
+
+    <p>
+      (a) Write a valid conclusion (in English) for the argument.
+    </p>
+    <p>
+      (b) Write the entire argument in symbolic form.
+    </p>
+    <p>
+      (c) Use a truth table to justify whether the argument is valid or invalid.
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      Let <m>s</m> = “Today is Saturday,”
+      <m>c</m> = “We have class today,”
+      <m>p</m> = “I will go shopping,” and
+      <m>q</m> = “I will go to the picnic.”
+    </p>
+
+    <p>
+      (a) A valid conclusion is:
+    </p>
+    <p>
+      If today is Saturday, then I will go shopping or I will go to the picnic.
+    </p>
+
+    <p>
+      (b) Symbolic form:
+    </p>
+    <p><m>s \to \lnot c</m></p>
+    <p><m>\lnot c \to (p \lor q)</m></p>
+    <p><m>\therefore s \to (p \lor q)</m></p>
+
+    <p>
+      (c) Construct a truth table with the premises next to each other and the last column as the conclusion.
+    </p>
+
+    <table>
+      <tabular>
+        <row header="yes">
+          <cell><m>s</m></cell>
+          <cell><m>c</m></cell>
+          <cell><m>p</m></cell>
+          <cell><m>q</m></cell>
+          <cell><m>s \to \lnot c</m></cell>
+          <cell><m>\lnot c \to (p \lor q)</m></cell>
+          <cell><m>s \to (p \lor q)</m></cell>
+        </row>
+        <row>
+          <cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell>
+        </row>
+        <row>
+          <cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Now look at the rows where both premises <m>s \to \lnot c</m> and
+      <m>\lnot c \to (p \lor q)</m> are true. In each of those rows, the conclusion
+      <m>s \to (p \lor q)</m> is also true.
+    </p>
+
+    <p>
+      Since there is no row in which all premises are true and the conclusion is false,
+      the argument is <term>valid</term>.
+    </p>
+  </solution>
+</question>
+</subsection>
+</section>

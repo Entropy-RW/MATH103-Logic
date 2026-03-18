@@ -21,6 +21,8 @@
      <xi:include href="./logic1.ptx" />
     <xi:include href="./Truthtables.ptx" />
     <xi:include href="./LogicalEquivalence.ptx" />
+     <xi:include href="./arguments.ptx" />
+s
 
     
   </article>
