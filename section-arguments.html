@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Logical Arguments</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.19';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="authorslastnamelowercase-ShortTitleCamelCase" class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="math103-logic.html"><span class="title">Logic</span> <span class="subtitle">MATH 103 Supplementary Materials</span></a></h1>
+<p class="byline">Behrang Forghani</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-logical-equivalence.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="math103-logic.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\foo}{b^{ar}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="math103-logic-3.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-statements-connectives.html" class="internal"><span class="codenumber">1</span> <span class="title">Statements and Connectives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-statements-connectives.html#section-statements-connectives-3" class="internal"><span class="codenumber">1.1</span> <span class="title">Statements and Connectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-statements-connectives.html#subsec-exercises" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-statements-connectives.html#subsec-ex2" class="internal"><span class="codenumber">1.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-course-requirements.html" class="internal"><span class="codenumber">2</span> <span class="title">Truth Tables</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-course-requirements.html#section-course-requirements-3" class="internal"><span class="codenumber">2.1</span> <span class="title">Truth Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-course-requirements.html#subsec-exercises-truth-tables" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-course-requirements.html#subsec-" class="internal"><span class="codenumber">2.3</span> <span class="title">Tautology and Contradiction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-logical-equivalence.html" class="internal"><span class="codenumber">3</span> <span class="title">Logical Equivalences</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-logical-equivalence.html#sec-logical-equivalence-3" class="internal"><span class="codenumber">3.1</span> <span class="title">Logically Equivalent</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-logical-equivalence.html#subsec-exercises-logical-equivalence" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-logical-equivalence.html#subsec-negating-statements" class="internal"><span class="codenumber">3.3</span> <span class="title">Negating Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-logical-equivalence.html#subsec-exercise" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="section-arguments.html" class="internal"><span class="codenumber">4</span> <span class="title">Logical Arguments</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-arguments.html#section-arguments-3" class="internal"><span class="codenumber">4.1</span> <span class="title">Logical Arguments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-arguments.html#subsec-truth-table-method" class="internal"><span class="codenumber">4.2</span> <span class="title">Truth Table Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-arguments.html#subsec-arguments-exercises" class="internal"><span class="codenumber">4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-arguments"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Logical Arguments</span>
+</h2>
+<article class="objectives goal-like" id="obj-arguments"><h3 class="heading">
+<span class="type">Objectives<span class="colon heading-divison-mark heading-divison-mark__colon">:</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Goals for This Section</span>
+</h3>
+<ol class="decimal" id="obj-arguments-2">
+<li id="obj-arguments-2-1">
+<div class="para" id="p-derived-obj-arguments-2-1">Define logical arguments.</div>
+<div class="autopermalink" data-description="Objective 4.1"><a href="#obj-arguments-2-1" title="Copy heading and permalink for Objective 4.1" aria-label="Copy heading and permalink for Objective 4.1">🔗</a></div>
+</li>
+<li id="obj-arguments-2-2">
+<div class="para" id="p-derived-obj-arguments-2-2">Learn to verify whether a logical argument is valid by using truth tables.</div>
+<div class="autopermalink" data-description="Objective 4.2"><a href="#obj-arguments-2-2" title="Copy heading and permalink for Objective 4.2" aria-label="Copy heading and permalink for Objective 4.2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 4: Goals for This Section"><a href="#obj-arguments" title="Copy heading and permalink for Objectives 4: Goals for This Section" aria-label="Copy heading and permalink for Objectives 4: Goals for This Section">🔗</a></div></article><section class="subsection" id="section-arguments-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Logical Arguments</span>
+</h3>
+<article class="definition definition-like" id="def-logical-argument"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-logical-argument-1-1">A <dfn class="terminology">logical argument</dfn> consists of a list of several premises (statements that convey assumptions, rules, facts, and observations), followed by a unique statement called the <dfn class="terminology">conclusion</dfn> of the argument.<div class="autopermalink" data-description="Paragraph"><a href="#def-logical-argument-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.1"><a href="#def-logical-argument" title="Copy heading and permalink for Definition 4.1" aria-label="Copy heading and permalink for Definition 4.1">🔗</a></div></article><details id="example-argument-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example of a Logical Argument.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-argument-1-2">(Premise 1:) If you win the game, then I will celebrate.<div class="autopermalink" data-description="Paragraph"><a href="#example-argument-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-argument-1-3">(Premise 2:) You won the game.<div class="autopermalink" data-description="Paragraph"><a href="#example-argument-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-argument-1-4">(Conclusion:) Therefore, I am celebrating.<div class="autopermalink" data-description="Paragraph"><a href="#example-argument-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.2: Example of a Logical Argument"><a href="#example-argument-1" title="Copy heading and permalink for Example 4.2: Example of a Logical Argument" aria-label="Copy heading and permalink for Example 4.2: Example of a Logical Argument">🔗</a></div></article></details><details id="example-argument-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Another Example of a Logical Argument.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-argument-2-2">(Premise 1:) If you are a hero, then you wear a Rolex.<div class="autopermalink" data-description="Paragraph"><a href="#example-argument-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-argument-2-3">(Premise 2:) You wear a Rolex.<div class="autopermalink" data-description="Paragraph"><a href="#example-argument-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-argument-2-4">(Conclusion:) Therefore, you are a hero.<div class="autopermalink" data-description="Paragraph"><a href="#example-argument-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.3: Another Example of a Logical Argument"><a href="#example-argument-2" title="Copy heading and permalink for Example 4.3: Another Example of a Logical Argument" aria-label="Copy heading and permalink for Example 4.3: Another Example of a Logical Argument">🔗</a></div></article></details><article class="definition definition-like" id="def-valid-argument"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-valid-argument-1-1">A <dfn class="terminology">valid argument</dfn> is a logical argument in which, if all the premises are true, then the conclusion must also be true.<div class="autopermalink" data-description="Paragraph"><a href="#def-valid-argument-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="def-valid-argument-1-2">In other words, a valid argument means that true premises guarantee a true conclusion.<div class="autopermalink" data-description="Paragraph"><a href="#def-valid-argument-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.4"><a href="#def-valid-argument" title="Copy heading and permalink for Definition 4.4" aria-label="Copy heading and permalink for Definition 4.4">🔗</a></div></article><article class="definition definition-like" id="def-invalid-argument"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-invalid-argument-1-1">A <dfn class="terminology">invalid argument</dfn> is a logical argument in which all the premises can be true, but the conclusion can still be false.<div class="autopermalink" data-description="Paragraph"><a href="#def-invalid-argument-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="def-invalid-argument-1-2">An invalid argument is often called a <dfn class="terminology">fallacy</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def-invalid-argument-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.5"><a href="#def-invalid-argument" title="Copy heading and permalink for Definition 4.5" aria-label="Copy heading and permalink for Definition 4.5">🔗</a></div></article><div class="autopermalink" data-description="Subsection 4.1: Logical Arguments"><a href="#section-arguments-3" title="Copy heading and permalink for Subsection 4.1: Logical Arguments" aria-label="Copy heading and permalink for Subsection 4.1: Logical Arguments">🔗</a></div></section><section class="subsection" id="subsec-truth-table-method"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Truth Table Method</span>
+</h3>
+<div class="para" id="subsec-truth-table-method-2">We can use <dfn class="terminology">truth tables</dfn> to verify whether a logical argument is valid. The method consists of the following steps:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-truth-table-method-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-truth-table-method-3">
+<li id="subsec-truth-table-method-3-1">
+<div class="para" id="p-derived-subsec-truth-table-method-3-1">Identify the premises and the conclusion.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-truth-table-method-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-truth-table-method-3-2">
+<div class="para" id="p-derived-subsec-truth-table-method-3-2">Represent each premise and the conclusion in symbolic form.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-truth-table-method-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-truth-table-method-3-3">
+<div class="para" id="p-derived-subsec-truth-table-method-3-3">
+    Construct a table by placing the premises and the conclusion next to each other,
+     with the last column representing the conclusion. Then extend the table to the
+    left by adding columns for all necessary simple statements and intermediate
+     expressions to complete the truth table.
+    </div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-truth-table-method-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="subsec-truth-table-method-3-4">
+<div class="para" id="p-derived-subsec-truth-table-method-3-4">Locate the rows where all premises are true, and then check the truth value of the conclusion in those rows.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#subsec-truth-table-method-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="subsec-truth-table-method-4">If, in every row where all premises are true, the conclusion is also true, then the argument is valid.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-truth-table-method-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="example-truth-table-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 1: A Valid Argument.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-truth-table-1-2">If I go to a college, I will find a better job. I go to a college. Therefore, I will find a better job.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-1-3">Let <span class="process-math">\(p\)</span> = “I go to a college,” and <span class="process-math">\(q\)</span> = “I will find a better job.”<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-1-4">Symbolic form:<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-1-5">
+<span class="process-math">\(p \to q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-1-6">
+<span class="process-math">\(p\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-1-7">
+<span class="process-math">\(\therefore q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="example-truth-table-1-8"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.7"><a href="#example-truth-table-1-8" title="Copy heading and permalink for Table 4.7" aria-label="Copy heading and permalink for Table 4.7">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p \to q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+</table></div></figure><div class="para" id="example-truth-table-1-9">The only row in which both premises <span class="process-math">\(p \to q\)</span> and <span class="process-math">\(p\)</span> are true is the first row. In that row, the conclusion <span class="process-math">\(q\)</span> is also true. Therefore, the argument is valid.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.6: Example 1: A Valid Argument"><a href="#example-truth-table-1" title="Copy heading and permalink for Example 4.6: Example 1: A Valid Argument" aria-label="Copy heading and permalink for Example 4.6: Example 1: A Valid Argument">🔗</a></div></article></details><details id="example-truth-table-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 2: A Valid Argument.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-truth-table-2-2">If you love reading, you have a library membership. You do not have a library membership. Therefore, you do not love reading.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-2-3">Let <span class="process-math">\(p\)</span> = “You love reading,” and <span class="process-math">\(q\)</span> = “You have a library membership.”<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-2-4">Symbolic form:<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-2-5">
+<span class="process-math">\(p \to q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-2-6">
+<span class="process-math">\(\lnot q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-2-7">
+<span class="process-math">\(\therefore \lnot p\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="example-truth-table-2-8"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.9"><a href="#example-truth-table-2-8" title="Copy heading and permalink for Table 4.9" aria-label="Copy heading and permalink for Table 4.9">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p \to q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\lnot q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\lnot p\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure><div class="para" id="example-truth-table-2-9">The only row in which both premises <span class="process-math">\(p \to q\)</span> and <span class="process-math">\(\lnot q\)</span> are true is the last row. In that row, the conclusion <span class="process-math">\(\lnot p\)</span> is also true. Therefore, the argument is valid.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.8: Example 2: A Valid Argument"><a href="#example-truth-table-2" title="Copy heading and permalink for Example 4.8: Example 2: A Valid Argument" aria-label="Copy heading and permalink for Example 4.8: Example 2: A Valid Argument">🔗</a></div></article></details><details id="example-truth-table-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 3: A Valid Argument.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-truth-table-3-2">I will learn MATH 103 or I will watch Breaking Bad. I will not watch Breaking Bad. Therefore, I will learn MATH 103.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-3-3">Let <span class="process-math">\(p\)</span> = “I will learn MATH 103,” and <span class="process-math">\(q\)</span> = “I will watch Breaking Bad.”<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-3-4">Symbolic form:<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-3-5">
+<span class="process-math">\(p \lor q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-3-6">
+<span class="process-math">\(\lnot q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-3-7">
+<span class="process-math">\(\therefore p\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="example-truth-table-3-8"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.11"><a href="#example-truth-table-3-8" title="Copy heading and permalink for Table 4.11" aria-label="Copy heading and permalink for Table 4.11">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p \lor q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\lnot q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+</table></div></figure><div class="para" id="example-truth-table-3-9">The only row in which both premises <span class="process-math">\(p \lor q\)</span> and <span class="process-math">\(\lnot q\)</span> are true is the second row. In that row, the conclusion <span class="process-math">\(p\)</span> is also true. Therefore, the argument is valid.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.10: Example 3: A Valid Argument"><a href="#example-truth-table-3" title="Copy heading and permalink for Example 4.10: Example 3: A Valid Argument" aria-label="Copy heading and permalink for Example 4.10: Example 3: A Valid Argument">🔗</a></div></article></details><details id="example-truth-table-invalid" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 4: An Invalid Argument.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-truth-table-invalid-2">If you are a hero, then you wear a Rolex. You wear a Rolex. Therefore, you are a hero.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-3">Let <span class="process-math">\(p\)</span> = “You are a hero,” and <span class="process-math">\(q\)</span> = “You wear a Rolex.”<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-4">Symbolic form:<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-5">
+<span class="process-math">\(p \to q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-6">
+<span class="process-math">\(q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-7">
+<span class="process-math">\(\therefore p\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="example-truth-table-invalid-8"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.13"><a href="#example-truth-table-invalid-8" title="Copy heading and permalink for Table 4.13" aria-label="Copy heading and permalink for Table 4.13">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p \to q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+</table></div></figure><div class="para" id="example-truth-table-invalid-9">In the third row, both premises <span class="process-math">\(p \to q\)</span> and <span class="process-math">\(q\)</span> are true, but the conclusion <span class="process-math">\(p\)</span> is false. Therefore, this argument is invalid.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.12: Example 4: An Invalid Argument"><a href="#example-truth-table-invalid" title="Copy heading and permalink for Example 4.12: Example 4: An Invalid Argument" aria-label="Copy heading and permalink for Example 4.12: Example 4: An Invalid Argument">🔗</a></div></article></details><details id="example-truth-table-invalid-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 5: Another Invalid Argument.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-truth-table-invalid-2-2">If it is raining, then the ground is wet. The ground is wet. Therefore, it is raining.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-2-3">Let <span class="process-math">\(p\)</span> = “It is raining,” and <span class="process-math">\(q\)</span> = “The ground is wet.”<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-2-4">Symbolic form:<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-2-5">
+<span class="process-math">\(p \to q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-2-6">
+<span class="process-math">\(q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-2-7">
+<span class="process-math">\(\therefore p\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="example-truth-table-invalid-2-8"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.15"><a href="#example-truth-table-invalid-2-8" title="Copy heading and permalink for Table 4.15" aria-label="Copy heading and permalink for Table 4.15">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p \to q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+</table></div></figure><div class="para" id="example-truth-table-invalid-2-9">Notice that in the first row, both premises are true and the conclusion is also true. However, in the third row, both premises <span class="process-math">\(p \to q\)</span> and <span class="process-math">\(q\)</span> are true, but the conclusion <span class="process-math">\(p\)</span> is false.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-truth-table-invalid-2-10">Since there is a row where the premises are true and the conclusion is false (T, T, F), the argument is invalid.<div class="autopermalink" data-description="Paragraph"><a href="#example-truth-table-invalid-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.14: Example 5: Another Invalid Argument"><a href="#example-truth-table-invalid-2" title="Copy heading and permalink for Example 4.14: Example 5: Another Invalid Argument" aria-label="Copy heading and permalink for Example 4.14: Example 5: Another Invalid Argument">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.2: Truth Table Method"><a href="#subsec-truth-table-method" title="Copy heading and permalink for Subsection 4.2: Truth Table Method" aria-label="Copy heading and permalink for Subsection 4.2: Truth Table Method">🔗</a></div></section><section class="subsection" id="subsec-arguments-exercises"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<div class="para" id="subsec-arguments-exercises-2">Determine whether each of the following arguments is valid or invalid.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-arguments-exercises-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="q-arguments-validity-a" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="q-arguments-validity-a-1-1">If I were a chicken, then I would lay eggs. However, I am not a chicken, so I do not lay eggs.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-a-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="q-arguments-validity-a-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="q-arguments-validity-a-2-1">Let <span class="process-math">\(p\)</span> = “I am a chicken,” and <span class="process-math">\(q\)</span> = “I lay eggs.”<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-a-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-a-2-2">Symbolic form:<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-a-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-a-2-3">
+<span class="process-math">\(p \to q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-a-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-a-2-4">
+<span class="process-math">\(\lnot p\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-a-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-a-2-5">
+<span class="process-math">\(\therefore \lnot q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-a-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="q-arguments-validity-a-2-6"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.17"><a href="#q-arguments-validity-a-2-6" title="Copy heading and permalink for Table 4.17" aria-label="Copy heading and permalink for Table 4.17">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p \to q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\lnot p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\lnot q\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure><div class="para" id="q-arguments-validity-a-2-7">In the third row, both premises <span class="process-math">\(p \to q\)</span> and <span class="process-math">\(\lnot p\)</span> are true, but the conclusion <span class="process-math">\(\lnot q\)</span> is false. Therefore, the argument is <dfn class="terminology">invalid</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-a-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.16.1"><a href="#q-arguments-validity-a-2" title="Copy heading and permalink for Solution 4.16.1" aria-label="Copy heading and permalink for Solution 4.16.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Question 4.16"><a href="#q-arguments-validity-a" title="Copy heading and permalink for Question 4.16" aria-label="Copy heading and permalink for Question 4.16">🔗</a></div></article></details><details id="q-arguments-validity-b" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="q-arguments-validity-b-1-1">If interest rates go down, then I will buy a house. If I buy a house, I will need a loan. Therefore, I will not need a loan if I do not buy a house.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-b-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="q-arguments-validity-b-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="q-arguments-validity-b-2-1">Let <span class="process-math">\(p\)</span> = “Interest rates go down,” <span class="process-math">\(q\)</span> = “I will buy a house,” and <span class="process-math">\(r\)</span> = “I will need a loan.”<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-b-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-b-2-2">Symbolic form:<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-b-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-b-2-3">
+<span class="process-math">\(p \to q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-b-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-b-2-4">
+<span class="process-math">\(q \to r\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-b-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-b-2-5">
+<span class="process-math">\(\therefore \lnot q \to \lnot r\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-b-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="q-arguments-validity-b-2-6"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.19"><a href="#q-arguments-validity-b-2-6" title="Copy heading and permalink for Table 4.19" aria-label="Copy heading and permalink for Table 4.19">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(r\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p \to q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q \to r\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\lnot q \to \lnot r\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure><div class="para" id="q-arguments-validity-b-2-7">In the seventh row, both premises <span class="process-math">\(p \to q\)</span> and <span class="process-math">\(q \to r\)</span> are true, but the conclusion <span class="process-math">\(\lnot q \to \lnot r\)</span> is false. Therefore, the argument is <dfn class="terminology">invalid</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-b-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.18.1"><a href="#q-arguments-validity-b-2" title="Copy heading and permalink for Solution 4.18.1" aria-label="Copy heading and permalink for Solution 4.18.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Question 4.18"><a href="#q-arguments-validity-b" title="Copy heading and permalink for Question 4.18" aria-label="Copy heading and permalink for Question 4.18">🔗</a></div></article></details><details id="q-arguments-validity-c" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="q-arguments-validity-c-1-1">If I am honest, you are lying; either you are lying or you have your facts wrong. You cannot have done your research, if you have your facts wrong. You did your research. Therefore, I am honest.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-c-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="q-arguments-validity-c-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="q-arguments-validity-c-2-1">Let <span class="process-math">\(h\)</span> = “I am honest,” <span class="process-math">\(l\)</span> = “You are lying,” <span class="process-math">\(f\)</span> = “You have your facts wrong,” and <span class="process-math">\(r\)</span> = “You did your research.”<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-c-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-c-2-2">Symbolic form:<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-c-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-c-2-3">
+<span class="process-math">\(h \to l\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-c-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-c-2-4">
+<span class="process-math">\(l \lor f\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-c-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-c-2-5">
+<span class="process-math">\(f \to \lnot r\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-c-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-c-2-6">
+<span class="process-math">\(r\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-c-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-c-2-7">
+<span class="process-math">\(\therefore h\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-c-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="q-arguments-validity-c-2-8"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.21"><a href="#q-arguments-validity-c-2-8" title="Copy heading and permalink for Table 4.21" aria-label="Copy heading and permalink for Table 4.21">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(h\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(l\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(r\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(h \to l\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(l \lor f\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f \to \lnot r\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(r\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(h\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+</table></div></figure><div class="para" id="q-arguments-validity-c-2-9">In the eleventh row, all the premises <span class="process-math">\(h \to l\text{,}\)</span> <span class="process-math">\(l \lor f\text{,}\)</span> <span class="process-math">\(f \to \lnot r\text{,}\)</span> and <span class="process-math">\(r\)</span> are true, but the conclusion <span class="process-math">\(h\)</span> is false. Therefore, the argument is <dfn class="terminology">invalid</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-c-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.20.1"><a href="#q-arguments-validity-c-2" title="Copy heading and permalink for Solution 4.20.1" aria-label="Copy heading and permalink for Solution 4.20.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Question 4.20"><a href="#q-arguments-validity-c" title="Copy heading and permalink for Question 4.20" aria-label="Copy heading and permalink for Question 4.20">🔗</a></div></article></details><details id="q-arguments-validity-d" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="q-arguments-validity-d-1-1">If you like apples, you will like this pie. If you like this pie, then you will like the bakery. Therefore, if you do not like the bakery, you do not like apples.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-d-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="q-arguments-validity-d-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="q-arguments-validity-d-2-1">Let <span class="process-math">\(a\)</span> = “You like apples,” <span class="process-math">\(p\)</span> = “You like this pie,” and <span class="process-math">\(b\)</span> = “You like the bakery.”<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-d-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-d-2-2">Symbolic form:<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-d-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-d-2-3">
+<span class="process-math">\(a \to p\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-d-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-d-2-4">
+<span class="process-math">\(p \to b\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-d-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-d-2-5">
+<span class="process-math">\(\therefore \lnot b \to \lnot a\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-d-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="q-arguments-validity-d-2-6"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.23"><a href="#q-arguments-validity-d-2-6" title="Copy heading and permalink for Table 4.23" aria-label="Copy heading and permalink for Table 4.23">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(a\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(b\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(a \to p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p \to b\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\lnot b \to \lnot a\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure><div class="para" id="q-arguments-validity-d-2-7">In every row where both premises <span class="process-math">\(a \to p\)</span> and <span class="process-math">\(p \to b\)</span> are true, the conclusion <span class="process-math">\(\lnot b \to \lnot a\)</span> is also true. Therefore, the argument is <dfn class="terminology">valid</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-d-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.22.1"><a href="#q-arguments-validity-d-2" title="Copy heading and permalink for Solution 4.22.1" aria-label="Copy heading and permalink for Solution 4.22.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Question 4.22"><a href="#q-arguments-validity-d" title="Copy heading and permalink for Question 4.22" aria-label="Copy heading and permalink for Question 4.22">🔗</a></div></article></details><details id="q-arguments-validity-e" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="q-arguments-validity-e-1-1">Given the premises:<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="q-arguments-validity-e-1-2">P1: If today is Saturday, then we do not have class today.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="q-arguments-validity-e-1-3">P2: If we do not have class today, then I will go shopping or I will go to the picnic.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="q-arguments-validity-e-1-4">(a) Write a valid conclusion (in English) for the argument.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="q-arguments-validity-e-1-5">(b) Write the entire argument in symbolic form.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="q-arguments-validity-e-1-6">(c) Use a truth table to justify whether the argument is valid or invalid.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="q-arguments-validity-e-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="q-arguments-validity-e-2-1">Let <span class="process-math">\(s\)</span> = “Today is Saturday,” <span class="process-math">\(c\)</span> = “We have class today,” <span class="process-math">\(p\)</span> = “I will go shopping,” and <span class="process-math">\(q\)</span> = “I will go to the picnic.”<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-e-2-2">(a) A valid conclusion is:<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-e-2-3">If today is Saturday, then I will go shopping or I will go to the picnic.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-e-2-4">(b) Symbolic form:<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-e-2-5">
+<span class="process-math">\(s \to \lnot c\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-e-2-6">
+<span class="process-math">\(\lnot c \to (p \lor q)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-e-2-7">
+<span class="process-math">\(\therefore s \to (p \lor q)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-e-2-8">(c) Construct a truth table with the premises next to each other and the last column as the conclusion.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="q-arguments-validity-e-2-9"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.25"><a href="#q-arguments-validity-e-2-9" title="Copy heading and permalink for Table 4.25" aria-label="Copy heading and permalink for Table 4.25">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(s\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(c\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(s \to \lnot c\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\lnot c \to (p \lor q)\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(s \to (p \lor q)\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure><div class="para" id="q-arguments-validity-e-2-10">Now look at the rows where both premises <span class="process-math">\(s \to \lnot c\)</span> and <span class="process-math">\(\lnot c \to (p \lor q)\)</span> are true. In each of those rows, the conclusion <span class="process-math">\(s \to (p \lor q)\)</span> is also true.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="q-arguments-validity-e-2-11">Since there is no row in which all premises are true and the conclusion is false, the argument is <dfn class="terminology">valid</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#q-arguments-validity-e-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.24.1"><a href="#q-arguments-validity-e-2" title="Copy heading and permalink for Solution 4.24.1" aria-label="Copy heading and permalink for Solution 4.24.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Question 4.24"><a href="#q-arguments-validity-e" title="Copy heading and permalink for Question 4.24" aria-label="Copy heading and permalink for Question 4.24">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.3: Exercises"><a href="#subsec-arguments-exercises" title="Copy heading and permalink for Subsection 4.3: Exercises" aria-label="Copy heading and permalink for Subsection 4.3: Exercises">🔗</a></div></section><div class="autopermalink" data-description="Section 4: Logical Arguments"><a href="#section-arguments" title="Copy heading and permalink for Section 4: Logical Arguments" aria-label="Copy heading and permalink for Section 4: Logical Arguments">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-logical-equivalence.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

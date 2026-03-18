@@ -773,6 +773,168 @@ var ptx_lunr_docs = [
   "number": "3.38",
   "title": "",
   "body": "  Use logical equivalence to rewrite the sentence: “If wanting peace is wrong, I do not want to be right.”    If I want to be right, then wanting peace is not wrong.   "
+},
+{
+  "id": "section-arguments",
+  "level": "1",
+  "url": "section-arguments.html",
+  "type": "Section",
+  "number": "4",
+  "title": "Logical Arguments",
+  "body": " Logical Arguments   Goals for This Section   Define logical arguments.  Learn to verify whether a logical argument is valid by using truth tables.     Logical Arguments    A logical argument consists of a list of several premises (statements that convey assumptions, rules, facts, and observations), followed by a unique statement called the conclusion of the argument.     Example of a Logical Argument  (Premise 1:) If you win the game, then I will celebrate.  (Premise 2:) You won the game.  (Conclusion:) Therefore, I am celebrating.    Another Example of a Logical Argument  (Premise 1:) If you are a hero, then you wear a Rolex.  (Premise 2:) You wear a Rolex.  (Conclusion:) Therefore, you are a hero.     A valid argument is a logical argument in which, if all the premises are true, then the conclusion must also be true.  In other words, a valid argument means that true premises guarantee a true conclusion.      A invalid argument is a logical argument in which all the premises can be true, but the conclusion can still be false.  An invalid argument is often called a fallacy .      Truth Table Method  We can use truth tables to verify whether a logical argument is valid. The method consists of the following steps:   Identify the premises and the conclusion.  Represent each premise and the conclusion in symbolic form.   Construct a table by placing the premises and the conclusion next to each other, with the last column representing the conclusion. Then extend the table to the left by adding columns for all necessary simple statements and intermediate expressions to complete the truth table.   Locate the rows where all premises are true, and then check the truth value of the conclusion in those rows.   If, in every row where all premises are true, the conclusion is also true, then the argument is valid.   Example 1: A Valid Argument  If I go to a college, I will find a better job. I go to a college. Therefore, I will find a better job.  Let = “I go to a college,” and = “I will find a better job.”  Symbolic form:               T  T  T  T  T    T  F  F  T  F    F  T  T  F  T    F  F  T  F  F     The only row in which both premises and are true is the first row. In that row, the conclusion is also true. Therefore, the argument is valid.    Example 2: A Valid Argument  If you love reading, you have a library membership. You do not have a library membership. Therefore, you do not love reading.  Let = “You love reading,” and = “You have a library membership.”  Symbolic form:               T  T  T  F  F    T  F  F  T  F    F  T  T  F  T    F  F  T  T  T     The only row in which both premises and are true is the last row. In that row, the conclusion is also true. Therefore, the argument is valid.    Example 3: A Valid Argument  I will learn MATH 103 or I will watch Breaking Bad. I will not watch Breaking Bad. Therefore, I will learn MATH 103.  Let = “I will learn MATH 103,” and = “I will watch Breaking Bad.”  Symbolic form:               T  T  T  F  T    T  F  T  T  T    F  T  T  F  F    F  F  F  T  F     The only row in which both premises and are true is the second row. In that row, the conclusion is also true. Therefore, the argument is valid.    Example 4: An Invalid Argument  If you are a hero, then you wear a Rolex. You wear a Rolex. Therefore, you are a hero.  Let = “You are a hero,” and = “You wear a Rolex.”  Symbolic form:               T  T  T  T  T    T  F  F  F  T    F  T  T  T  F    F  F  T  F  F     In the third row, both premises and are true, but the conclusion is false. Therefore, this argument is invalid.    Example 5: Another Invalid Argument  If it is raining, then the ground is wet. The ground is wet. Therefore, it is raining.  Let = “It is raining,” and = “The ground is wet.”  Symbolic form:               T  T  T  T  T    T  F  F  F  T    F  T  T  T  F    F  F  T  F  F     Notice that in the first row, both premises are true and the conclusion is also true. However, in the third row, both premises and are true, but the conclusion is false.  Since there is a row where the premises are true and the conclusion is false (T, T, F), the argument is invalid.     Exercises  Determine whether each of the following arguments is valid or invalid.    If I were a chicken, then I would lay eggs. However, I am not a chicken, so I do not lay eggs.    Let = “I am a chicken,” and = “I lay eggs.”  Symbolic form:               T  T  T  F  F    T  F  F  F  T    F  T  T  T  F    F  F  T  T  T     In the third row, both premises and are true, but the conclusion is false. Therefore, the argument is invalid .      If interest rates go down, then I will buy a house. If I buy a house, I will need a loan. Therefore, I will not need a loan if I do not buy a house.    Let = “Interest rates go down,” = “I will buy a house,” and = “I will need a loan.”  Symbolic form:                T  T  T  T  T  T    T  T  F  T  F  T    T  F  T  F  T  F    T  F  F  F  T  T    F  T  T  T  T  T    F  T  F  T  F  T    F  F  T  T  T  F    F  F  F  T  T  T     In the seventh row, both premises and are true, but the conclusion is false. Therefore, the argument is invalid .      If I am honest, you are lying; either you are lying or you have your facts wrong. You cannot have done your research, if you have your facts wrong. You did your research. Therefore, I am honest.    Let = “I am honest,” = “You are lying,” = “You have your facts wrong,” and = “You did your research.”  Symbolic form:                     T T T T T T F T T    T T T F T T T F T    T T F T T T T T T    T T F F T T T F T    T F T T F T F T T    T F T F F T T F T    T F F T F F T T T    T F F F F F T F T    F T T T T T F T F    F T T F T T T F F    F T F T T T T T F    F T F F T T T F F    F F T T T T F T F    F F T F T T T F F    F F F T T F T T F    F F F F T F T F F     In the eleventh row, all the premises , , , and are true, but the conclusion is false. Therefore, the argument is invalid .      If you like apples, you will like this pie. If you like this pie, then you will like the bakery. Therefore, if you do not like the bakery, you do not like apples.    Let = “You like apples,” = “You like this pie,” and = “You like the bakery.”  Symbolic form:                T T T T T T    T T F T F F    T F T F T T    T F F F T F    F T T T T T    F T F T F T    F F T T T T    F F F T T T     In every row where both premises and are true, the conclusion is also true. Therefore, the argument is valid .      Given the premises:  P1: If today is Saturday, then we do not have class today.  P2: If we do not have class today, then I will go shopping or I will go to the picnic.  (a) Write a valid conclusion (in English) for the argument.  (b) Write the entire argument in symbolic form.  (c) Use a truth table to justify whether the argument is valid or invalid.    Let = “Today is Saturday,” = “We have class today,” = “I will go shopping,” and = “I will go to the picnic.”  (a) A valid conclusion is:  If today is Saturday, then I will go shopping or I will go to the picnic.  (b) Symbolic form:     (c) Construct a truth table with the premises next to each other and the last column as the conclusion.              T T T T F T T    T T T F F T T    T T F T F T T    T T F F F F F    T F T T T T T    T F T F T T T    T F F T T T T    T F F F T F F    F T T T T T T    F T T F T T T    F T F T T T T    F T F F T F T    F F T T T T T    F F T F T T T    F F F T T T T    F F F F T F T     Now look at the rows where both premises and are true. In each of those rows, the conclusion is also true.  Since there is no row in which all premises are true and the conclusion is false, the argument is valid .     "
+},
+{
+  "id": "obj-arguments",
+  "level": "2",
+  "url": "section-arguments.html#obj-arguments",
+  "type": "Objectives",
+  "number": "4",
+  "title": "Goals for This Section",
+  "body": " Goals for This Section   Define logical arguments.  Learn to verify whether a logical argument is valid by using truth tables.   "
+},
+{
+  "id": "def-logical-argument",
+  "level": "2",
+  "url": "section-arguments.html#def-logical-argument",
+  "type": "Definition",
+  "number": "4.1",
+  "title": "",
+  "body": "  A logical argument consists of a list of several premises (statements that convey assumptions, rules, facts, and observations), followed by a unique statement called the conclusion of the argument.   "
+},
+{
+  "id": "example-argument-1",
+  "level": "2",
+  "url": "section-arguments.html#example-argument-1",
+  "type": "Example",
+  "number": "4.2",
+  "title": "Example of a Logical Argument.",
+  "body": " Example of a Logical Argument  (Premise 1:) If you win the game, then I will celebrate.  (Premise 2:) You won the game.  (Conclusion:) Therefore, I am celebrating.  "
+},
+{
+  "id": "example-argument-2",
+  "level": "2",
+  "url": "section-arguments.html#example-argument-2",
+  "type": "Example",
+  "number": "4.3",
+  "title": "Another Example of a Logical Argument.",
+  "body": " Another Example of a Logical Argument  (Premise 1:) If you are a hero, then you wear a Rolex.  (Premise 2:) You wear a Rolex.  (Conclusion:) Therefore, you are a hero.  "
+},
+{
+  "id": "def-valid-argument",
+  "level": "2",
+  "url": "section-arguments.html#def-valid-argument",
+  "type": "Definition",
+  "number": "4.4",
+  "title": "",
+  "body": "  A valid argument is a logical argument in which, if all the premises are true, then the conclusion must also be true.  In other words, a valid argument means that true premises guarantee a true conclusion.   "
+},
+{
+  "id": "def-invalid-argument",
+  "level": "2",
+  "url": "section-arguments.html#def-invalid-argument",
+  "type": "Definition",
+  "number": "4.5",
+  "title": "",
+  "body": "  A invalid argument is a logical argument in which all the premises can be true, but the conclusion can still be false.  An invalid argument is often called a fallacy .   "
+},
+{
+  "id": "subsec-truth-table-method-2",
+  "level": "2",
+  "url": "section-arguments.html#subsec-truth-table-method-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "truth tables "
+},
+{
+  "id": "example-truth-table-1",
+  "level": "2",
+  "url": "section-arguments.html#example-truth-table-1",
+  "type": "Example",
+  "number": "4.6",
+  "title": "Example 1: A Valid Argument.",
+  "body": " Example 1: A Valid Argument  If I go to a college, I will find a better job. I go to a college. Therefore, I will find a better job.  Let = “I go to a college,” and = “I will find a better job.”  Symbolic form:               T  T  T  T  T    T  F  F  T  F    F  T  T  F  T    F  F  T  F  F     The only row in which both premises and are true is the first row. In that row, the conclusion is also true. Therefore, the argument is valid.  "
+},
+{
+  "id": "example-truth-table-2",
+  "level": "2",
+  "url": "section-arguments.html#example-truth-table-2",
+  "type": "Example",
+  "number": "4.8",
+  "title": "Example 2: A Valid Argument.",
+  "body": " Example 2: A Valid Argument  If you love reading, you have a library membership. You do not have a library membership. Therefore, you do not love reading.  Let = “You love reading,” and = “You have a library membership.”  Symbolic form:               T  T  T  F  F    T  F  F  T  F    F  T  T  F  T    F  F  T  T  T     The only row in which both premises and are true is the last row. In that row, the conclusion is also true. Therefore, the argument is valid.  "
+},
+{
+  "id": "example-truth-table-3",
+  "level": "2",
+  "url": "section-arguments.html#example-truth-table-3",
+  "type": "Example",
+  "number": "4.10",
+  "title": "Example 3: A Valid Argument.",
+  "body": " Example 3: A Valid Argument  I will learn MATH 103 or I will watch Breaking Bad. I will not watch Breaking Bad. Therefore, I will learn MATH 103.  Let = “I will learn MATH 103,” and = “I will watch Breaking Bad.”  Symbolic form:               T  T  T  F  T    T  F  T  T  T    F  T  T  F  F    F  F  F  T  F     The only row in which both premises and are true is the second row. In that row, the conclusion is also true. Therefore, the argument is valid.  "
+},
+{
+  "id": "example-truth-table-invalid",
+  "level": "2",
+  "url": "section-arguments.html#example-truth-table-invalid",
+  "type": "Example",
+  "number": "4.12",
+  "title": "Example 4: An Invalid Argument.",
+  "body": " Example 4: An Invalid Argument  If you are a hero, then you wear a Rolex. You wear a Rolex. Therefore, you are a hero.  Let = “You are a hero,” and = “You wear a Rolex.”  Symbolic form:               T  T  T  T  T    T  F  F  F  T    F  T  T  T  F    F  F  T  F  F     In the third row, both premises and are true, but the conclusion is false. Therefore, this argument is invalid.  "
+},
+{
+  "id": "example-truth-table-invalid-2",
+  "level": "2",
+  "url": "section-arguments.html#example-truth-table-invalid-2",
+  "type": "Example",
+  "number": "4.14",
+  "title": "Example 5: Another Invalid Argument.",
+  "body": " Example 5: Another Invalid Argument  If it is raining, then the ground is wet. The ground is wet. Therefore, it is raining.  Let = “It is raining,” and = “The ground is wet.”  Symbolic form:               T  T  T  T  T    T  F  F  F  T    F  T  T  T  F    F  F  T  F  F     Notice that in the first row, both premises are true and the conclusion is also true. However, in the third row, both premises and are true, but the conclusion is false.  Since there is a row where the premises are true and the conclusion is false (T, T, F), the argument is invalid.  "
+},
+{
+  "id": "q-arguments-validity-a",
+  "level": "2",
+  "url": "section-arguments.html#q-arguments-validity-a",
+  "type": "Question",
+  "number": "4.16",
+  "title": "",
+  "body": "  If I were a chicken, then I would lay eggs. However, I am not a chicken, so I do not lay eggs.    Let = “I am a chicken,” and = “I lay eggs.”  Symbolic form:               T  T  T  F  F    T  F  F  F  T    F  T  T  T  F    F  F  T  T  T     In the third row, both premises and are true, but the conclusion is false. Therefore, the argument is invalid .   "
+},
+{
+  "id": "q-arguments-validity-b",
+  "level": "2",
+  "url": "section-arguments.html#q-arguments-validity-b",
+  "type": "Question",
+  "number": "4.18",
+  "title": "",
+  "body": "  If interest rates go down, then I will buy a house. If I buy a house, I will need a loan. Therefore, I will not need a loan if I do not buy a house.    Let = “Interest rates go down,” = “I will buy a house,” and = “I will need a loan.”  Symbolic form:                T  T  T  T  T  T    T  T  F  T  F  T    T  F  T  F  T  F    T  F  F  F  T  T    F  T  T  T  T  T    F  T  F  T  F  T    F  F  T  T  T  F    F  F  F  T  T  T     In the seventh row, both premises and are true, but the conclusion is false. Therefore, the argument is invalid .   "
+},
+{
+  "id": "q-arguments-validity-c",
+  "level": "2",
+  "url": "section-arguments.html#q-arguments-validity-c",
+  "type": "Question",
+  "number": "4.20",
+  "title": "",
+  "body": "  If I am honest, you are lying; either you are lying or you have your facts wrong. You cannot have done your research, if you have your facts wrong. You did your research. Therefore, I am honest.    Let = “I am honest,” = “You are lying,” = “You have your facts wrong,” and = “You did your research.”  Symbolic form:                     T T T T T T F T T    T T T F T T T F T    T T F T T T T T T    T T F F T T T F T    T F T T F T F T T    T F T F F T T F T    T F F T F F T T T    T F F F F F T F T    F T T T T T F T F    F T T F T T T F F    F T F T T T T T F    F T F F T T T F F    F F T T T T F T F    F F T F T T T F F    F F F T T F T T F    F F F F T F T F F     In the eleventh row, all the premises , , , and are true, but the conclusion is false. Therefore, the argument is invalid .   "
+},
+{
+  "id": "q-arguments-validity-d",
+  "level": "2",
+  "url": "section-arguments.html#q-arguments-validity-d",
+  "type": "Question",
+  "number": "4.22",
+  "title": "",
+  "body": "  If you like apples, you will like this pie. If you like this pie, then you will like the bakery. Therefore, if you do not like the bakery, you do not like apples.    Let = “You like apples,” = “You like this pie,” and = “You like the bakery.”  Symbolic form:                T T T T T T    T T F T F F    T F T F T T    T F F F T F    F T T T T T    F T F T F T    F F T T T T    F F F T T T     In every row where both premises and are true, the conclusion is also true. Therefore, the argument is valid .   "
+},
+{
+  "id": "q-arguments-validity-e",
+  "level": "2",
+  "url": "section-arguments.html#q-arguments-validity-e",
+  "type": "Question",
+  "number": "4.24",
+  "title": "",
+  "body": "  Given the premises:  P1: If today is Saturday, then we do not have class today.  P2: If we do not have class today, then I will go shopping or I will go to the picnic.  (a) Write a valid conclusion (in English) for the argument.  (b) Write the entire argument in symbolic form.  (c) Use a truth table to justify whether the argument is valid or invalid.    Let = “Today is Saturday,” = “We have class today,” = “I will go shopping,” and = “I will go to the picnic.”  (a) A valid conclusion is:  If today is Saturday, then I will go shopping or I will go to the picnic.  (b) Symbolic form:     (c) Construct a truth table with the premises next to each other and the last column as the conclusion.              T T T T F T T    T T T F F T T    T T F T F T T    T T F F F F F    T F T T T T T    T F T F T T T    T F F T T T T    T F F F T F F    F T T T T T T    F T T F T T T    F T F T T T T    F T F F T F T    F F T T T T T    F F T F T T T    F F F T T T T    F F F F T F T     Now look at the rows where both premises and are true. In each of those rows, the conclusion is also true.  Since there is no row in which all premises are true and the conclusion is false, the argument is valid .   "
 }
 ]
 
