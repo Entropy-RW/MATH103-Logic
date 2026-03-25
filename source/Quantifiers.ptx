@@ -1,0 +1,213 @@
+<section xml:id="section-negation-quantifiers">
+  <title>Negation of Statements with Quantifiers</title>
+
+  <objectives xml:id="obj-quantifiers">
+    <title>Goals for This Section</title>
+    <ol>
+      <li>
+        Learn universal and existential quantifiers.
+      </li>
+      <li>
+        Learn how to negate statements involving quantifiers.
+      </li>
+    </ol>
+  </objectives>
+
+  <subsection xml:id="subsec-quantifiers">
+    <title>Quantifiers</title>
+
+    <definition xml:id="def-universal-quantifier">
+      <statement>
+        <p>
+          A <term>universal quantifier</term> refers to statements that apply to all elements
+          in a given set. Common words include <term>all</term>, <term>each</term>,
+          <term>every</term>, and <term>no one</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <example xml:id="example-universal-quantifier">
+      <title>Examples of Universal Quantifiers</title>
+      <ul>
+        <li>All students enjoy learning.</li>
+        <li>No one cheats in MATH 103.</li>
+      </ul>
+    </example>
+
+    <definition xml:id="def-existential-quantifier">
+      <statement>
+        <p>
+          An <term>existential quantifier</term> refers to statements that assert the existence
+          of at least one element. Common phrases include <term>some</term>,
+          <term>there exists</term>, and <term>at least one</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <example xml:id="example-existential-quantifier">
+      <title>Examples of Existential Quantifiers</title>
+      <ul>
+        <li>Some animals live in SC.</li>
+        <li>There exists a ghost in my house.</li>
+      </ul>
+    </example>
+
+  </subsection>
+
+  <subsection xml:id="subsec-negating-quantifiers">
+    <title>Negating Statements with Quantifiers</title>
+
+    <definition xml:id="def-negate-universal">
+      <statement>
+        <p>
+          The negation of a universal statement becomes an existential statement:
+        </p>
+        <p>
+          <m>\lnot (\text{Universal statement } p) \equiv \text{Existential statement } (\lnot p)</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <example xml:id="example-negate-universal">
+      <title>Negating Universal Statements</title>
+      <p>
+        <m>\lnot</m>(All students enjoy learning)
+        is equivalent to
+        (Some students do not enjoy learning).
+      </p>
+      <p>
+        <m>\lnot</m>(No one cheats in MATH 103)
+        is equivalent to
+        (Some students cheat in MATH 103).
+      </p>
+    </example>
+
+    <definition xml:id="def-negate-existential">
+      <statement>
+        <p>
+          The negation of an existential statement becomes a universal statement:
+        </p>
+        <p>
+          <m>\lnot (\text{Existential statement } p) \equiv \text{Universal statement } (\lnot p)</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <example xml:id="example-negate-existential">
+      <title>Negating Existential Statements</title>
+      <p>
+        <m>\lnot</m>(Some animals live in SC)
+        is equivalent to
+        (No animals live in SC).
+      </p>
+      <p>
+        <m>\lnot</m>(There exists a ghost in my house)
+        is equivalent to
+        (No ghost is in my house).
+      </p>
+    </example>
+
+  </subsection>
+
+  <subsection xml:id="subsec-quantifier-exercises">
+  <title>Exercises</title>
+
+  <p>
+    Write the negation of each statement.
+  </p>
+
+  <question xml:id="q-negation-quantifiers-1">
+    <statement>
+      <p>All animals can swim.</p>
+    </statement>
+    <solution>
+      <p>
+        The negation is: Some animals cannot swim.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-negation-quantifiers-2">
+    <statement>
+      <p>Every cat has a tail.</p>
+    </statement>
+    <solution>
+      <p>
+        The negation is: Some cats do not have a tail.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-negation-quantifiers-3">
+    <statement>
+      <p>Someone can hear us.</p>
+    </statement>
+    <solution>
+      <p>
+        The negation is: No one can hear us.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-negation-quantifiers-4">
+    <statement>
+      <p>There is a man who is three meters tall.</p>
+    </statement>
+    <solution>
+      <p>
+        The negation is: No man is three meters tall.
+      </p>
+    </solution>
+  </question>
+
+  <p>
+    Write the negation of each compound statement.
+  </p>
+
+  <question xml:id="q-negation-compound-1">
+    <statement>
+      <p>Scooby-Doo can swim or jump.</p>
+    </statement>
+    <solution>
+      <p>
+        The negation is: Scooby-Doo cannot swim and cannot jump.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-negation-compound-2">
+    <statement>
+      <p>All animals can swim or jump.</p>
+    </statement>
+    <solution>
+      <p>
+        The negation is: Some animals cannot swim and cannot jump.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-negation-compound-3">
+    <statement>
+      <p>If Scooby-Doo can swim, then he can jump.</p>
+    </statement>
+    <solution>
+      <p>
+        The negation is: Scooby-Doo can swim and he cannot jump.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-negation-compound-4">
+    <statement>
+      <p>If every animal can swim, then every animal can jump.</p>
+    </statement>
+    <solution>
+      <p>
+        The negation is: Every animal can swim and some animals cannot jump.
+      </p>
+    </solution>
+  </question>
+
+</subsection>
+
+</section>
