@@ -935,6 +935,168 @@ var ptx_lunr_docs = [
   "number": "4.24",
   "title": "",
   "body": "  Given the premises:  P1: If today is Saturday, then we do not have class today.  P2: If we do not have class today, then I will go shopping or I will go to the picnic.  (a) Write a valid conclusion (in English) for the argument.  (b) Write the entire argument in symbolic form.  (c) Use a truth table to justify whether the argument is valid or invalid.    Let = “Today is Saturday,” = “We have class today,” = “I will go shopping,” and = “I will go to the picnic.”  (a) A valid conclusion is:  If today is Saturday, then I will go shopping or I will go to the picnic.  (b) Symbolic form:     (c) Construct a truth table with the premises next to each other and the last column as the conclusion.              T T T T F T T    T T T F F T T    T T F T F T T    T T F F F F F    T F T T T T T    T F T F T T T    T F F T T T T    T F F F T F F    F T T T T T T    F T T F T T T    F T F T T T T    F T F F T F T    F F T T T T T    F F T F T T T    F F F T T T T    F F F F T F T     Now look at the rows where both premises and are true. In each of those rows, the conclusion is also true.  Since there is no row in which all premises are true and the conclusion is false, the argument is valid .   "
+},
+{
+  "id": "section-negation-quantifiers",
+  "level": "1",
+  "url": "section-negation-quantifiers.html",
+  "type": "Section",
+  "number": "5",
+  "title": "Negation of Statements with Quantifiers",
+  "body": " Negation of Statements with Quantifiers   Goals for This Section   Learn universal and existential quantifiers.  Learn how to negate statements involving quantifiers.     Quantifiers    A universal quantifier refers to statements that apply to all elements in a given set. Common words include all , each , every , and no one .     Examples of Universal Quantifiers   All students enjoy learning.  No one cheats in MATH 103.      An existential quantifier refers to statements that assert the existence of at least one element. Common phrases include some , there exists , and at least one .     Examples of Existential Quantifiers   Some animals live in SC.  There exists a ghost in my house.      Negating Statements with Quantifiers    The negation of a universal statement becomes an existential statement:   .     Negating Universal Statements   (All students enjoy learning) is equivalent to (Some students do not enjoy learning).   (No one cheats in MATH 103) is equivalent to (Some students cheat in MATH 103).     The negation of an existential statement becomes a universal statement:   .     Negating Existential Statements   (Some animals live in SC) is equivalent to (No animals live in SC).   (There exists a ghost in my house) is equivalent to (No ghost is in my house).     Exercises  Write the negation of each statement.    All animals can swim.    The negation is: Some animals cannot swim.      Every cat has a tail.    The negation is: Some cats do not have a tail.      Someone can hear us.    The negation is: No one can hear us.      There is a man who is three meters tall.    The negation is: No man is three meters tall.    Write the negation of each compound statement.    Scooby-Doo can swim or jump.    The negation is: Scooby-Doo cannot swim and cannot jump.      All animals can swim or jump.    The negation is: Some animals cannot swim and cannot jump.      If Scooby-Doo can swim, then he can jump.    The negation is: Scooby-Doo can swim and he cannot jump.      If every animal can swim, then every animal can jump.    The negation is: Every animal can swim and some animals cannot jump.     "
+},
+{
+  "id": "obj-quantifiers",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#obj-quantifiers",
+  "type": "Objectives",
+  "number": "5",
+  "title": "Goals for This Section",
+  "body": " Goals for This Section   Learn universal and existential quantifiers.  Learn how to negate statements involving quantifiers.   "
+},
+{
+  "id": "def-universal-quantifier",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#def-universal-quantifier",
+  "type": "Definition",
+  "number": "5.1",
+  "title": "",
+  "body": "  A universal quantifier refers to statements that apply to all elements in a given set. Common words include all , each , every , and no one .   "
+},
+{
+  "id": "example-universal-quantifier",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#example-universal-quantifier",
+  "type": "Example",
+  "number": "5.2",
+  "title": "Examples of Universal Quantifiers.",
+  "body": " Examples of Universal Quantifiers   All students enjoy learning.  No one cheats in MATH 103.   "
+},
+{
+  "id": "def-existential-quantifier",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#def-existential-quantifier",
+  "type": "Definition",
+  "number": "5.3",
+  "title": "",
+  "body": "  An existential quantifier refers to statements that assert the existence of at least one element. Common phrases include some , there exists , and at least one .   "
+},
+{
+  "id": "example-existential-quantifier",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#example-existential-quantifier",
+  "type": "Example",
+  "number": "5.4",
+  "title": "Examples of Existential Quantifiers.",
+  "body": " Examples of Existential Quantifiers   Some animals live in SC.  There exists a ghost in my house.   "
+},
+{
+  "id": "def-negate-universal",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#def-negate-universal",
+  "type": "Definition",
+  "number": "5.5",
+  "title": "",
+  "body": "  The negation of a universal statement becomes an existential statement:   .   "
+},
+{
+  "id": "example-negate-universal",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#example-negate-universal",
+  "type": "Example",
+  "number": "5.6",
+  "title": "Negating Universal Statements.",
+  "body": " Negating Universal Statements   (All students enjoy learning) is equivalent to (Some students do not enjoy learning).   (No one cheats in MATH 103) is equivalent to (Some students cheat in MATH 103).  "
+},
+{
+  "id": "def-negate-existential",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#def-negate-existential",
+  "type": "Definition",
+  "number": "5.7",
+  "title": "",
+  "body": "  The negation of an existential statement becomes a universal statement:   .   "
+},
+{
+  "id": "example-negate-existential",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#example-negate-existential",
+  "type": "Example",
+  "number": "5.8",
+  "title": "Negating Existential Statements.",
+  "body": " Negating Existential Statements   (Some animals live in SC) is equivalent to (No animals live in SC).   (There exists a ghost in my house) is equivalent to (No ghost is in my house).  "
+},
+{
+  "id": "q-negation-quantifiers-1",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#q-negation-quantifiers-1",
+  "type": "Question",
+  "number": "5.9",
+  "title": "",
+  "body": "  All animals can swim.    The negation is: Some animals cannot swim.   "
+},
+{
+  "id": "q-negation-quantifiers-2",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#q-negation-quantifiers-2",
+  "type": "Question",
+  "number": "5.10",
+  "title": "",
+  "body": "  Every cat has a tail.    The negation is: Some cats do not have a tail.   "
+},
+{
+  "id": "q-negation-quantifiers-3",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#q-negation-quantifiers-3",
+  "type": "Question",
+  "number": "5.11",
+  "title": "",
+  "body": "  Someone can hear us.    The negation is: No one can hear us.   "
+},
+{
+  "id": "q-negation-quantifiers-4",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#q-negation-quantifiers-4",
+  "type": "Question",
+  "number": "5.12",
+  "title": "",
+  "body": "  There is a man who is three meters tall.    The negation is: No man is three meters tall.   "
+},
+{
+  "id": "q-negation-compound-1",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#q-negation-compound-1",
+  "type": "Question",
+  "number": "5.13",
+  "title": "",
+  "body": "  Scooby-Doo can swim or jump.    The negation is: Scooby-Doo cannot swim and cannot jump.   "
+},
+{
+  "id": "q-negation-compound-2",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#q-negation-compound-2",
+  "type": "Question",
+  "number": "5.14",
+  "title": "",
+  "body": "  All animals can swim or jump.    The negation is: Some animals cannot swim and cannot jump.   "
+},
+{
+  "id": "q-negation-compound-3",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#q-negation-compound-3",
+  "type": "Question",
+  "number": "5.15",
+  "title": "",
+  "body": "  If Scooby-Doo can swim, then he can jump.    The negation is: Scooby-Doo can swim and he cannot jump.   "
+},
+{
+  "id": "q-negation-compound-4",
+  "level": "2",
+  "url": "section-negation-quantifiers.html#q-negation-compound-4",
+  "type": "Question",
+  "number": "5.16",
+  "title": "",
+  "body": "  If every animal can swim, then every animal can jump.    The negation is: Every animal can swim and some animals cannot jump.   "
 }
 ]
 
